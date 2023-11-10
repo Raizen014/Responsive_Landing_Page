@@ -10,6 +10,7 @@
     <link rel="icon" href="coffee.png"> 
 </head>
 <body>
+    
     <header>
         <div class="logo">
             <img src="coffee.png" alt="Tara Kape Logo">
@@ -24,6 +25,17 @@
         </nav>
         <h1 id="Brand">Tara Kape</h1>
         <button id="ordernow">Order Now</button>
+        <div class="burger-menu">&#9776;</div>
+        <div class="mobile-nav">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><button id="ordernow1">Order Now</button></li>
+                
+            </ul>
+        </div>
     </header>
 
 
@@ -36,9 +48,6 @@
         </div>
     
     </section>
-
-
-
 
 
     <section class="Features">
@@ -99,8 +108,6 @@
     </section>
 
 
-
-
     <section  class="about2">
         <div class ="about2-container">
             <div class="about2-picture">
@@ -110,89 +117,245 @@
             <div class ="about-content2">
                 <h1>Embrace the Aroma<br>of Coffee</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s.</p>
+                <div class="prom-container">
+                    <div class="prom3">
+                        <div class="icon-prom">  
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFf0lEQVR4nO1bXWgcVRS+Wi2tWP+pD/4VxR9iTbLnTNIYNefuJpGi9cmOJnvuZrFgQSMo9SdWBNEH9UUQ4s9TLb5Uim1BS1H7QxB86EMFf1pBCpag4ENb0abGH9pUzu7M7nQzm2R2ZrMz7n5wSDLZe+fe75577rnnnFWqhRZaCAom1Ebj7py2SMUMeaJlrOFJo3EXE+wxhK8OZdZcG+lLjMbdRuM51vhp0LZM3dezxk3yM9JBKaWGCa9hwm9kbF5hghPDGeyO7EU5bZFMPptO9QVty4Q7nYHtqvX9hqzVeeq4Yo6+zxkNPzPB4TIJOGn39CxXjYbRsK0wKMLfR9JddwZtz2l4xFnVw97nouZMeNaZ7M6NiBfL86zGZ8ukWA+rRsOkIWM0zsxSU43HDMFm27aXzNU+R2gXPw/fn/e8L3V3qb++1EPuc17bfZlHC15UcQATPM8a/60koagZsHm+9qI59gBefv4zvMVD5uvuc0OpteW+U4+puGCY8A4meIYJ3iyIxqPOyv5Ua5+G8JAz2RlDuJ01vG80Tjmrf9oMtq8M1CGnrdtFtTb09q5YyOfz1LGKdao/R9ZAUGHCA87gj9dKQJa6OsW2zD4F8Gyg1c9TxypD+KWng9Nytlb7vH1/z1WsYa+vSgcVgi0qBIb7Om9lDR8ZgpNM+KfRMCGLsuAObLttKRN+6zc4scB+bVjj1igmz4SfZ++960rVSDDhsMeYvMeE65nwF+fvH/zaiNo6EzhQk/rrVH82nbpJxQGs4SWXAHfvG4K3nAn+7d8GjzkEHRUrbjSO1UdgVFzduhJgyBqqpgGG8Mh8pNVfYLSuBNhFGzDLnxYRJ8S/jb1EnAxXE+olkfv01SD7Uayn5+VThvAJ1WzI9XfdJn6ATW2XqgSCiC6SbWwI35XfQ3eYK/rhY7ETguf8rtfZNGBp+2QQQk1+JJNqXzxDV5N92OGrAYTviITWAC5GgRo+0TlOh4lQEwxCgPyuYoKysY6IAJaQFcGOSt8//gTgb6xhn4TrWMN4Lo0PzBdb8IUbQWENpxJGwGwhPJLVeE9gDTAaPq48970ECEm1+PyhZABv9IsJztKAQkwApj0k/CPebGimucFGkDX89eh91g2VMUE/G7BxHV4iiyRtnP9NC2mJJsBomBYCKmOCcxlBuWW6oTe5akdGQLYBW0Am7xcTnO8UMIRvO+Oe8W6jUARwLI1gFQLSnR3uuHNk5ZqOgDzRMs9WGms6Asxg+0rPifBU8xFA5QCPJGWaigC7p2e5Jz943E2XNQUBG3p7V7hZ7OKxiZtCvYhjToCE8eS4lLyg0fgaa/jV40TtjfQ6zDEkoPp9AD5ZaGarBPGzJQcglwnX4UgYATNMeNAJ4l4QvFOyVruduTn8pGwBCX3l+ruuDt0xE673FhTEnYBWREi3QmITdVU1bvh1eN7rcn0JGElqWDzKxAgXEqVS0oKTjjGcLJW4LKKUKs2KK7/NEL48kum4rq6JkYZY3ipY6IkUaWIkiQTUDaZZCMh7C4817HNFQtDeUPRii6ccToIchzzPvxB1lzBY3QqPTRKE4EyW4PFQBHBF4bEh3N+I1Q4khAdLFagEZ+TormnyQ1UKj5MAKego5QI0jNfcifEpPE4KDOHXoZIhI1UKj5OAQhSY4A/HO/xQRVV4bILV/62JYjLFmD6MBnjvG95KNdb4oIq68NgszC8/8YpSF4YlgDU8XfPdQOPWsO9X3sLjoAOo5dsglSik6YNNWozfd05qP3goLCyy/dbNcvy4XmKYwmenQrV4Emn8QCUFhmBLeUXglCH4Kvh5Dj96VnZKvregkgLbblsqrnNEHt1J04eDKonIFcrgYZw1flaDr7/daHyh4d8daKEF9b/Hf/po/DVvvIwuAAAAAElFTkSuQmCC">
+                        </div>
+                        <div class="prom-text">
+                            <h2>Exquisite Coffee Blends</h2>
+                            <p>Lorem Ipsum is simply dummy text of<br>the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                    <div class="prom4">
+                        <div class="icon-prom">  
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHZ0lEQVR4nO1aZ4xUVRS+q9gbNmyxY0PZ3TlnFjcoc84sC6KisU1k59zZtWKMGhULYAmSWBMFSxQ7RhNpBmM01qgRLFETSyxRIqIxYgXLIlbEnPvu233MzixvtrA763zJ/THvvVvOvad9544xFVRQQQUVVLBBYVOJ4yzDy0K4SptlfClLMN78HyCM11vGtQUbwbVm4J88rrWEf1rGyyc0JnbXZhkn+2drB7QmWIaX/WlPzn8nhFP0nRC+aAYqLGOrE3IU7pb/Tp+5dwy/moEKIfhRhVS1z3/X3FCzR6AB8KMZKMhkMhtLQ+0wyyCW8GZL+LNX8yn531qCqd4//KzfCiVsc7ruUCIaZMoJmbH1O0g6eYYwPiOEvxX29vinboJqgjt5Fd47wY4NVgvhs1mCs08/snZn009Rpd7bCc34V0SAf4XwfcvwqDBeaTl5soa6zsJg8A1eJQxzhOEDHSPy/h91kpbwBJ2zr4U204zZyC2Y4d1wkUFiAwtUC1qobtdC/XIMRwnDC5bgF1V5YXhe0ji20LeqJUJ4lmVcKAy/t88DH+YomeszE7GUPEwY346cztIs4yUtVDO4t+ZsItxJTUcIv4yYyLu5VDJhNhSIaJAwXCGEf3h7/lodlmrDhnSuNg0ThfF7vwl/a4Z5wbihm/XqxC1UM9jZoJ/UMt6QoWFbmz5CphG3s4wzhXCN14hFudF1O/bKZLlG3Evtzk+0PJtOpOL0s2OqhwjjbEuJcXHnyqaSR7s+Y6qHxFqb8ymhNuCSplTtAaYnceqo5J6W4asgU8PXJzQcvkt84Z0n136z898LwWvCuLhDP8KHfFb4QdxNCDiFd8aEX2fTib1NT+CMkSO3CUKZE2Kx/o7bd32ChI6s1I0rhuyRw7e3BG/6TfhIf5tuosoSPuUX8nap9q5qL4wPFjvFYhsQNR1V71LmlHEjtg03zxI+1618wVLi9DA/7zGVikA1Sh1XT49rKTHUMq70G3xm1wYZUz3EEqxwG5BOHm/KDEJ4itfcn4olZJ3CkZcg3D1tyhSamnstuKGkjhPH45ZtKkTwhCV4VRi+8QnH95bhLRd/UzCqFBvLpRKHWIJLhfFxzRwDsgSrLeEXlvFJ5QulZnWZ+votcunESZbxPiF8T9etSZoQfCqMH/sNWBnbf01oOHwXIbynKGHpSGCWWoZpLVSzT4eNRNwkR8lGy3B78F3MMTXkEtydS+MxLUSb54+rz5zQhHPDIkuMtsgfWPFYL4T3RAmHOyWGGeqJ7agR+2YywzbVDcqmMG0Jr/MnF5KgNUpwhOAirfcFpxzw/8g337mowCBNhAfbMdVbOW2jxNAsJ05VocN8I9JanRYyThbCC4RxviNREcZpGd8QgsuEoF7puG680mz1XRqKo7Rc15hN4fB1hLcEU9sF1xQXFgghx2KDaWgQhoeLcX+nloTX6eJi8oUqNQMhvNqTrXY6HBWa4E0lX5qhxkqZCS8OK1JK2duKMpbw/MgJzpF08iDTBWj8VXpqCe9UrbEEp/VE6HQZXhqbLcEtwjBLCyOFzK0ELnNbG3cgPNeEtqmLL9YxS3W1QZECZzs62oDQHaHUnDQ+B75BNwzPUQfZnTFV7TXxsoTTLcEDwnBh0XqEHlRw6J+ZkNbm83ilvWqrYRpcSLV1kjhlqoC+JkcqZW3L0gq3JUE9EDlOocNR8zSO1QgQ5iz5pTfLeG/+Gl3KHPiD3zUdXeQ/ntecxv21PK0norsTGewHtXPPwe+yBN+2OxX8S52UMLao+WhY0pCjjsY9036MP+QtbqUQPCaMk3QTXcmM8LsO3zDM0Wy0uSFRrWPq2OowhbBJCO4PbTpaHBGCm4IKEizwlN2PhZO0oOKIHeE8L/MrRlLJOn8/V+CU4VNVVfX++eomKTjRCx6tAXbWlmjuoE6z0Omqg8wyHqECKJGJGzIDjYJpGlU6qHoqcUgkGcrX4FVNDTjCfajlZ3cikR1VDxvHa6t6WYbzNOwJ4zKX2DC2+kRkvobF3Oi6A02JyI5O7qdhT0/LH0TrOkmT+qKYDjsoyLaZhYbmhVrSM4VgGR/xOzvDDBC4nCQQfvp6P86mcHhoN4WysHKDaqiP+2sKXckVhM+pB8RNrZbnvbNeHL8TBTe1Gk/NAFF/jQKmJNbGQSGk7O7mItCwGUY4daoldbYEn7gMkZNkyhTCeKx36O+U3pngRu8MZ5oyhWaBPuZfXXJnIaj3trPMlCGCe0tc7tQ/n/7GRFUbN0/X1pgyQ48coDDM8jn2NFNmcAWbIPm5tcuD5LQSFNjQ+6bMEDpxrV51eZBMZtimYVnLEYsCV1n98ZmarM9jVnQ7jNvweovwmpBQrPO+Hz5rV3+423QXQsh+sE/6o7CFnnnqvVaLMKYHUCUMn4eFkfyrrELXW335LELpl/TY/4ikXf0Xmn4OX0LvWvLTaWU2/I8fwx1aVjL9DFqBbg/bSuW7cB/YGfSvaetcmvTbBqt7jcZbDS+Ec4N7wr4WtENbrkXUrqa9FVRQQQUVVFBBBeb/hv8AQy+RGz0SkC0AAAAASUVORK5CYII=">
+                        </div>
+                        <div class="prom-text">
+                            <h2>Artisanal Pastries</h2>
+                            <p>Lorem Ipsum is simply dummy text of<br>the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                    <div class="prom5">
+                        <div class="icon-prom">  
+                            <img src="data:image/png;base64,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">
+                        </div>
+                        <div class="prom-text">
+                            <h2>Fresh Ingredients</h2>
+                            <p>Lorem Ipsum is simply dummy text of<br>the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                    <div class="prom6">
+                        <div class="icon-prom">  
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAESElEQVR4nO1aTYgcRRSu1YiTfq8jKGqCmnjwBxUPMun3elahMdtVPY6SgzEHI0Tx4A/+XfSgEZQgmFxE/DuoKCSX6CWKqIdEBQ3GaPwDiSEahSRejIKHxWBURl5XDSxL96Y3U9U5uB8MLDNV3/e+ftVV9apWqQX8D7F68pw4Z7wiT2DKULReEz6qCZ/TDNsNwWeG8IghPGYYv5Y2rQfY7aoz+rT4wiKJewXjzZrhQU2wSTNu0YwfaoLvDcO0YRw2/hAeyzm+tBUDRQJXacIdhvDvZgHCtJjShB8Zwq2GYbOYNoxrTC+eNCs7F0nWNOE2aa8JngpuYlW6+ALD8JsVxH8M4S+aYI9meEszPm8YN8jwKVLI+4RX9unsJU25jRizWXk3rAsr9kJpguGd+QTZiDtdcokzckSFgO7BeYbgdcNwdF7jfawPHBVN0fb2QmvCL9szgLM/eyWGsY2YFG6z6YYDebezXLWEvNtZrgl+KLUTWDc2oR1S5Uxyn5cI56d9v9N+zQfZvpIsxWtVy8gZr7MTC343Nplh+EPIWlukZqBYGV/uMvK7GheG8fgpfNGHLiN/jW+E4JNTbwQ+Vr6gCb+1xFFXBYbhqOsy8Y1/coK33RNaowJDE97iMrHdO7khfNauJ9HDKjA0xY+4h/aMd/Kc4SG3ML6oAkMTvFRqpfCAd/Kc49XWCL6nAkMTvm9X9Pgm7+R5Cle7jOxTgaHLggyHUvd4J5fCx2XkT6XUxOj7guIbZdutGQ9rjm5oyjdHvwnREK0sOxdVCIy28UU3Wjb6TgKZsXAdaspV16/oRsvcav5rCA8j8c9L8V48eaKAGnBV9jNS+loje0J4sOKEb8zeVsuwsMMDD5k06jfmqulnElhnjeC2EB6sCMNm9xQ3hNLQjI+7jDwdSkMVCd7jZq5XQmkYhlfdw7orlIbKk6hwIjvr2miGTw3jF1W19iqG8+U32YjW9TeMO21GIqNCYSqJL7NG4GBtIIRfuTY/yXiX4AdJtFRKZk3w86gOrzcCB4PXP1mmOprxX6lRskwtqmpTPnU5Bq0/HdlddzKSZWqRcItGv6/OVCFRntMyDge9zoq6Nk8odZpOotvtMJMjU5gu/6ZovfxW12/Q66xw0/FhFRqVhdYcY/5k+LTPQqpeWM5u/QlXG8EtfqOuFt7osrAxFLdmeNI3d4VYfKfbPG4NlW3N8R2+uSvE4HqXkV0BuHeVU2+KmQqNgs+6uHJaPYkXvu6EZjDHjOgNo7nexwtfY+T42rXq9DDRzw5AVm3Goaz0AU4Vf1RtwTB+4Hs/JFt5Y7fvO3xxNt6hasK7/XHivS4jL6u2MKNm2OS71skJH/PF2fjyRypGb5yMb1ojcKsvzhOLBqiryzqFxUicqrYwOumQa2rZ2o/LJxyjK+9BEi1VLWJC7hQDXB/sV21Djv7ltrf8p4FxDViOvVO96JrWjSxgAWpO/Adfn+EQLY8R7QAAAABJRU5ErkJggg==">
+                        </div>
+                        <div class="prom-text">
+                            <h2>Artisanal Pastries</h2>
+                            <p>Lorem Ipsum is simply dummy text of<br>the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>        
             </div> 
         </div>
     </section>
 
 
-
-
-
     <section class="menu">
         <div class="menu_header">
             <h4>Our Menu</h4>
-            <h2>Photo Gallery</h2>
+            <h2>Our Popular Products</h2>
         </div>
-        <div class="menu_container">
-            <div class="menu_items">
-                <img src="americano.jpg" alt="americano coffee">
-                <div class="menu_text">
-                    <h2>Americano Coffee</h2>
-                    <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod</p>
+        <div class="slideshow-container">
+            <div class="menu_container">
+                <div class="menu_items">
+                    <img src="americano.jpg" alt="americano coffee">
+                    <div class="menu_text">
+                        <h2>Americano Coffee</h2>
+                        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod</p>
+                    </div>
+                    <div class="pricenbtn">
+                        <h2 class="price">$13.6</h2>
+                        <button class="addtcart">Add to cart</button>
+                    </div>
                 </div>
-            </div>
-            <div class="menu_items">
-                <img src="black coffee.jpg" alt="black coffee">
-                <div class="menu_text">
-                    <h2>Black Coffee</h2>
-                    <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod</p>
+                <div class="menu_items">
+                    <img src="black coffee.jpg" alt="black coffee">
+                    <div class="menu_text">
+                        <h2>Black Coffee</h2>
+                        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod</p>
+                    </div>
+                    <div class="pricenbtn">
+                        <h2 class="price">$11.9</h2>
+                        <button class="addtcart">Add to cart</button>
+                    </div>
                 </div>
-            </div>
-            <div class="menu_items">
-                <img src="espresso.jpg" alt="espresso coffee">
-                <div class="menu_text">
-                    <h2>Espresso Coffee</h2>
-                    <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod</p>
+                <div class="menu_items">
+                    <img src="espresso.jpg" alt="espresso coffee">
+                    <div class="menu_text">
+                        <h2>Espresso Coffee</h2>
+                        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod</p>
+                    </div>
+                    <div class="pricenbtn">
+                        <h2 class="price">$18.1</h2>
+                        <button class="addtcart">Add to cart</button>
+                    </div>
                 </div>
-            </div>
-            <div class="menu_items">
-                <img src="cappucino.jpg" alt="americano coffee">
-                <div class="menu_text">
-                    <h2>Cappuccino Coffee</h2>
-                    <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod</p>
+                <div class="menu_items">
+                    <img src="cappucino.jpg" alt="americano coffee">
+                    <div class="menu_text">
+                        <h2>Cappuccino Coffee</h2>
+                        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod</p>
+                    </div>
+                    <div class="pricenbtn">
+                        <h2 class="price">$15.5</h2>
+                        <button class="addtcart">Add to cart</button>
+                    </div>
                 </div>
-            </div>
-            <div class="menu_items">
-                <img src="macchiato.jpg" alt="black coffee">
-                <div class="menu_text">
-                    <h2>Macchiato Coffee</h2>
-                    <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod</p>
+                <div class="menu_items">
+                    <img src="macchiato.jpg" alt="black coffee">
+                    <div class="menu_text">
+                        <h2>Macchiato Coffee</h2>
+                        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod</p>
+                    </div>
+                    <div class="pricenbtn">
+                        <h2 class="price">$21.2</h2>
+                        <button class="addtcart">Add to cart</button>
+                    </div>
                 </div>
-            </div>
-            <div class="menu_items">
-                <img src="decaf.jpg" alt="espresso coffee">
-                <div class="menu_text">
-                    <h2>Decaf Coffee</h2>
-                    <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod</p>
+                <div class="menu_items">
+                    <img src="decaf.jpg" alt="espresso coffee">
+                    <div class="menu_text">
+                        <h2>Decaf Coffee</h2>
+                        <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod</p>
+                    </div>
+                    <div class="pricenbtn">
+                        <h2 class="price">$17.9</h2>
+                        <button class="addtcart">Add to cart</button>
+                    </div>
                 </div>
-            </div>
-
-
+        
+            <!-- Navigation buttons -->
+            <a class="prevBtn">&#10094;</a>
+            <a class="nextBtn">&#10095;</a>
         </div>
 
 
-
-
-
-
-
-
-
-
+        </div>
     </section>
+
 
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or feedback, please don't hesitate to reach out to us. We'd love to hear from you!</p>
-        <a href="contact.html" class="cta-button">Contact Us</a>
+        <div class="leftdiv">
+            <h2>Tara Kape - Coffee shop</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit. Feugiat purus sed fames cursus. Lorem ipsum<br>dolor sit amet, consectetur adipiscing elit. Feugiat<br> purus sed fames cursus.</p>
+            <div class="Socmed">
+                <a href="https://web.facebook.com" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC80lEQVR4nO2ay2vUUBSHr/hEERWfpS5EaP0rBDcKIoL1gdaNRaxWaOtG0YL4QBQRtK3/ggtBF+6UigsFxUdBRXChteBe26l9oLW1nxzmDpShk0luTu4kmg+yKUl+55s0uefexJicnJycnP8UYANwGOgF+oABYBj4bbdh+7c+u0+zHGOyBLAa6AT6cecN0CHnMmkF2Aj0ABPoMQ50A/UmLQALgVPAGMkhP+IlYHGtZbcA7/HHO6CxVrL7Er6qlRgFmnzLtgBT1I5poM2X7AnSQ4ePf+Np0oPUsifJB9RYQoXPAEPAIPDVNiRyr4ZB9mvQll2UwNP4B3AD2AosqZC71HZg1Xgrw6Om8Dll2QfAypDZMv6G4YyWbL3teLS4A8yLkB9WWG63Og3hHkXZz8CyiPlhhYWbGhOBCUXh4w41RBEejzXhoDhj0eKnPISq5DUAe4EDs7b7EXPa4wj3Kwo/r5J13g5PcXntKlunVECJ2wFZjYpZcp51LsLN6HIhIOuictZBF+Fe5SI6A7LuKmd1uwj3KRdxMiDriXLWIxfhQY/CT5WzBlyEhzIs/M1FeDLDwr98Cl8GVs2xVVyAA5ZXOEa2ew41TLoIFxyFuyKHBdcha9RR+e4S9CUlwiMONXxyCXpca2Hb7bnw0Gfj0aUovM1n43EoBcJtjjXsd13pmHEI+2CfrOXbjipz3rmO+eiQ/8f5DSTwkuyNw4HT0EDsS7KsCVecpFRFVhYV16J9CMsa9YrqZn6miT6Eb5m4AGvtonnaheXqro8tLABnMyB82mgBLHDsaX0JvwLmqwnPWmgbSaFwQf1lWglgd4zXpUkISy07TZIAR2w3U2th6QJbE5UtARxz+ORBU1g+amsxPgF2RbyntYQLQX15ogCb5dWGR+EXwCa/lmXIcGB77tEEheWqtqsPPQod2fUAcRdh6fCuAmtMWqG4AtkKPCt7sIUVnrLHHpVzmSxBcZm1yV6l7QH7XQGu2X1DffuRk5OTk2P+Qf4CTdD8t07XMloAAAAASUVORK5CYII="></a>
+                <a href="https://twitter.com" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC9klEQVR4nO2aW4iMURzAz7IkRW3Ltg82RKEo4klqkbsHJCFFyau2PCyFrBcJLV4o2U1WiXJpRbk8qFWLIpFbUqsoFg+urdv+9G+PTGPGzrl98812fjXNNDPfOf/fnO/c/meUikQikUgkEskBMFweqq8CjAZ2AHeAb/ylC7gLbJPvFFhWlU0AA20Ct6hnCHAwSzIf8p19wNAc5fQDFgPtwFSbQFqB2b7E/tOq9zFHrqnRkpOBncAz/dk1m0DG64s/AFMCyVYBHdjzFniX9d4XYIxNMFsyCukEpnmWlZZpwy8/gGUZdZSbBHQmq7BPwDyPwms8y34ElusfcgZwCKg3CUg6fq4Bow4o8yD81KNsN3BJ3zHSMMJ1YIBJQDI15OMCMMxBdhJheQhUmAZ1tZdCXwPr5RayEN4UUFZG72plEVRjgRXcBmoNyz4QSPayccv+AVhgWJmIryxkZARaAshK/+3fW915kQ5vOUfK3HhERvR8g4bB3WNCq3IF2OAYxFfghhZcC8wExgFb8c9pH8JlwBVKg2ZX2Sr9XGm51k2aRlfhx8B5YCkwURbkpJuNrsJtWQV+J90sdBXeS2lR4yo8i9Khw0k2Y4S+R2lwQvmAnsWD7ETSzmovwoHXvb7oypXfsoaeDfVx0ss5b7JZ/bmuwKxi0sxRoQDGAk3AZ9LBIx/Zl38ABslKRm//VunF/6ti28qGRIWCnl1Pmnhgk20pGGAu6WKRCg1wjHRwMrhsRl8u9q3d6ZIxNQYYLHNfkWR/+jwMMEKnbF4kLLxZFROgHFgCHAZuAW8CyjYFmXNtAabrLEkITjmlYAMdZv8KJHs0FbJANdAAvA8kKtvShmJLjgDWAWcD57heAvOTkqoF9gO79X8pmnXGUoJIghbr8yEH6QmSySdZ2k0P5UK1dmvAAUkWEhedU6y+AUbKpK8Pybs9SN4EtjunVhP8d9wKYI8+j32u80q5kETBEz3I7dLXVaq+AFChp6pR+nW4vWokEolEIhFVivwGmlrsjoBQivEAAAAASUVORK5CYII="></a>
+            </div>
+        </div>
+        <div class="rightdiv">
+            <h2>Contact Us!</h2>
+            <div class="contact-container"> 
+                <div class="contacts">
+                    <div class="icon-contact">  
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEH0lEQVR4nO2ZSWhVVxjHb4wTkaI41ZGCgiulioVaxYXFYVEsiFRBkVRRFJyWpVhXQTe1WCpaBd3oTqXRVrRFpEXBKdAoqBhdVEVFcIg2lcTxVz79Xzgk79x37nv33SSQ/yrk/s833Hu+8UVRD3rQeQC+BBqANuAy8FnUnQD0BXbSEc3A6Kg7ABgInJLhrcA6YChwVP87HiinN7AZuE15uAV8B1SncWIEcEkC7gFT2z17pGcrAmSZE1liU6gTgxQHhmvARwU4S/X8KTCmiDx7k4Y5QQZ4AMyTnH9CyP2A0zpwBRiSwK0PuWLxa4wyAKGygC3i3g5403bFHotfW7byjB15Iu6sQMHLxLdzI8tSnrEjbeIOSiH8mM7Ul6U8Y0duijsxhfAxCnrD4pKVZ+xIvbhLUypYpXNNJSvP2JF14u5PqcAKpeE1UFWS8owdGQ+8Bf4FPkih4GvpaChZeZiedwglx23JmkB+f6fodUjDnenIIvGbrE8K4H8rfiPQqyzlGTtiTd51nVldhPsh8Ezczz0c69UMk4MM8ACYIjl30xxaqEP3gZoE3h7xjiZwtlIYZ/S8GviLcGxJ40gVcEEHv0+IjRZxVhaZabY6XyZGi54vCXTgrlqovsGOSMEnwCul1OkezganRenQJXvOzNSZv4FJwEPgjf0/qhSAOifwazxf7jdxLiZdQ/FrgBPiW6Z7rr9/rJgTzrWIZ5OdkX9+sbnFcCRpgrO4KHBldodkx7Jh2UajrmF5QiG1K4ISQJWHd1LF9iqwF/g0yhPAchnZ6lNumxUn+LdHXRXAT05KLrhBsVrifL0foq4IoA/wp4w86wtsYD7wMnXOzxPAMBv+ZeQJX04HvnKc2e6LmU4FMAF4ICMP+rKUvkyrk5nC91F5AfhY20aUfaoSYqbFSc2FalG1kok1nVYYb1jjmosjMmA68F+xwAamOam5we0AgNlOnWqPw9aU5uXMXOBF7EzClxnnFM0nGo3jjgDFXa0mzVVOR20bzSV5ObPAcWZfQsxYB/Bru7duBn9jDWg77linlUG7hBF5fZn4mh1KyGbWm61X3PwMDC8id4UTi7YMXFYxJxylMxylvxeZY/qlkDva2Z2hKzkqM8MT+rI4NZ/zbR9LlF3rbEKbK96nqc7ccoahzBQCI50k0ZiV3GIdQDy+tvm65hJlD5bc51nJDOnNdjh3e1exwSsEwEbJOxvlCVXteDluVXtGGbKmOan+i2wtDU8CcQW3NmQbMCCljHFOIqnsaBwwNtdpoRHPNasDl4DDnF3bH3Zt87E62aipwHkndmyxsca3a+Z9lb/mbF6Cd9IVhyr8Qucto1n+gH5onaifx617vhOn29yayLTQenaxFuf2K4APlsoHRt0BCua1wC/Kbq3qfuvStDQ96EGULf4Hw6xxZFfQ5UkAAAAASUVORK5CYII=">
+                    </div>
+                    <div class="contact-text">
+                        <h2>Call Us</h2>
+                        <p>+01 234 567</p>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="icon-contact">  
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD20lEQVR4nO2YTWhVRxTHb6KNGK2xpcWYUHRTpUZabN34iV2nTdS2LtpdVi2luyTSjaIxKUJBIoIJRN1robSlm6ZRbBHc2YXFfkBbP8B+qNTEtBVJfnLw/2B8vnvv3Ju5Ly/FPwxc3pnzP+e8OTNn5kTRY/zPAawGdgNfA5eAOxr2PQr0AquiWgWwHhjDHxboK1GtAHgCOAJMy8GbwAjQodVZpGHfncAxzUE6h4H5sx3EU8BpOTUJ9AFLPPSWAAeAf5zVWVodryuvRCmVrllq5eB4CfhNHGeBhmK8TXbC0slwBWiZAU8LcFVcg2G99NvY00qndQH4XlaaTdl3GC/9DJdSqi8gZ784R0Nxphlc7ZxOsRsbeE0BWw2Z0Hd7wvwm4Ja4ny8sAMegFTvDsYQ5diLFIXYVgROa01NYAI4xq86GzoSVMPwHdAPLNXr0G3ErA+yQ/KtqBPKjjFW8Zjh1pbuCzK4nhrGUtP2hCN/LjVm+GxanyJsryJolG4/RXSz5RBG+lxsrVeOFMfJxyZdXkLVKdjtGd5Hkk0X4Xm7MqrhhRcrR3JNwUMSl1krJrxbhe7mxsykbtt3Z7L2q3C0K4m6K7uuSn6lGIIMydiBhTl/O43dAcw4VFoBj7A0Z+z5lXrvSbMKnIErnkrh3BHc85gpeSpG1AXlfFKdxPxmKN83olzK6LyDnfnF+EYrTx+guGf0JqA/AVw/8LM63wnjpZ3gB8LsMdwTgsyew4bpxh/HS3/iHMv5tAK5z4todxrvsm/5vObBhBjybStWeWXy3fywnPp0Bx+fiOBjWu2xOtOruZc/ejTn0NyuIyUp3s6rCeaKeB+py7o39xXnoCSteOm0MOzPovSmdP3x6YVUB8J5TVxZ4Ht821/BuVCsA5gMXfdPEuVReLLxdCtQBv5CMbWUbd1p3pbYE3rWaY3NfLTuGpxNsXc66B0vEW1KCeOQfBY47G39ezFWktMFHnN/nAd952NuSJ5AhKfdn0Hka+FN671eQfyDZDeCZDLwD0hvKEoMpNjit/7aMuu84lfo55/cVznv+7YycbdK7manRDWyX4oUsBh39T6T/jdKm3mkTfZaT80JSPy1O6VRcb8pT/1nVB8MeYK++/wKW5eTsFsdJXwXrwf6rznhrHqNlXcN7GjN6wvLgOjQl35p8FLqSWjY5DwzD0QB8Y+LqCjs5navRmhQajQH4urz+5MzL52f8BRuBuJq80l4dc8OpqEaBz0HkVNftUY2CtNIArNGEW1VvAGQv1jdi+2rARxIORzUOYFi+DlS66f7K3MPlh/pqwFbmLrbOQlI8RpSG+1XxhXP12wwDAAAAAElFTkSuQmCC">
+                    </div>
+                    <div class="contact-text">
+                        <h2>Address</h2>
+                        <p>Lucena City</p>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="icon-contact">  
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACJklEQVR4nO3YS6hNcRTH8b/3q9xEiJBuXQYMGEhJkVJSklJKMVB3amh0S3dkamggJWWiZGLAgJQUSSYMiAGRR97v10f7Wrd2p3PuOffcfZxH+1t7ss9vrfX/9T/rv/faKZWUlJSUtAM9QtJrRlKXomeNoD91GeivZuQ9dqcuATvwppqRjD84hsmpQ8EkHMHvqs2OodyPF9CXOgz0xdrEWoeqNnvFdj3AmtQhYBXuVbZBzVMLy3Erbn/E3rY6SCNr2oV3saa7+YNpzOMXM3Eq97c7gWltMDAlejbr3YyzmFOhqW0kJxrEj5BcxaL/aGI+LkXtn1mD19DVNxLCzXgesifY0FIHaaTmOjyKmq+wbQxtY0ZCvBQ3QvoNh1riII3U2o/PUes2VtTRN24kAmbgeEXfTC/QwNToh1FOY1YDceMzkgs8gC8Rdh1LCjCxEFdyOz44jtjmjETwejyO0JfY2pSDf7k24VnkeoqN44xv3kgkWIDL9U6VOjmyU/F75LiGxU3kmJiRGuf8GcxuIC57Tp0s4jmlCCO5ZPvwKVLdwcoxtMtwM7RfcXCCtYsdrLAa9yPda2yvotmCF6F5iLUF1C1+QsRcnI+Uv3A0Gwni1ftw9FLGRcwrqGZrRt1Y+HCub87FJe4NFznvaJWRXIGdeDuaHx+wpwV1Wv/xAQMxEmTXQItq9OhXlNSlKI10GMod6TCUO9Jh6Nkd6XaSHiGVlJSUlKQ28BeJl84fDKCHpgAAAABJRU5ErkJggg==">
+                    </div>
+                    <div class="contact-text">
+                        <h2>E-mail</h2>
+                        <p>tarakape@domain.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
 
     <footer>
         <p>© 2023 Copyright<p id="brand"> Tara Kape - Coffee Shop </p>. All Rights Reserved.</p>
 
     </footer>
 
-</body>
 
+
+
+    <script>
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navLinks = document.querySelector('.nav-links');
+    
+        burgerMenu.addEventListener('click', () => {
+           
+            burgerMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    
+        document.addEventListener('DOMContentLoaded', function () {          
+    if (window.innerWidth <= 950) {
+        var currentIndex = 0;
+        var menuItems = document.querySelectorAll('.menu_items');
+        var totalItems = menuItems.length;
+        var minItems = 0; 
+        var maxItems = 6; 
+
+        function showItem(index) {
+           
+            menuItems.forEach(function (item) {
+                item.style.display = 'none';
+            });
+
+           
+            menuItems[index].style.display = 'flex';
+        }
+
+        function nextItem() {
+            currentIndex = (currentIndex + 1) % totalItems;
+
+            
+            if (currentIndex < maxItems) {
+                showItem(currentIndex);
+            } else {
+              
+                currentIndex = maxItems - 0;
+            }
+        }
+
+        function prevItem() {
+            
+            if (currentIndex > minItems) {
+                currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+                showItem(currentIndex);
+            }
+            
+        }
+
+        
+        showItem(currentIndex);
+
+        
+        document.querySelector('.nextBtn').addEventListener('click', nextItem);
+        document.querySelector('.prevBtn').addEventListener('click', prevItem);
+    }
+
+        });
+    </script>
+    
+</body>
 
 </html>
